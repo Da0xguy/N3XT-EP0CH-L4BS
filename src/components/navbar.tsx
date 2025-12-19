@@ -4,7 +4,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center gap-[5px]">
         <img
-          src=""
+          src="src/assets/logo.png"
           alt="Next Epoch Labs Logo"
           className="w-[50px] h-[30px]"
         />
