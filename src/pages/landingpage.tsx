@@ -4,9 +4,10 @@ export default function LandingPage() {
   return (
     <>
       <Navbar />
-
+      
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden pt-28 pb-24 bg-white">
+      <section className="relative overflow-hidden pt-48 pb-24 bg-white">
+        
         <div className="absolute inset-x-0 top-0 h-[280px] bg-[url('/waves-bg.png')] bg-cover opacity-40 -z-10" />
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h1 className="md:text-6xl font-bold text-gray-900 leading-tight">
@@ -139,7 +140,7 @@ export default function LandingPage() {
             {image: "src/assets/item5.png", title: "Collaborative Partnership", content: "We work closely with clients, ensuring their vision is realized with meticulous attention to detail and shared success."},
           ].map((item, i) => (
             <div key={i} className="w-[210px] text-center">
-              <img src={item.image} className="w-11 h-11" />
+              <img src={item.image} className="w-11 h-11 mx-auto" />
               <h4 className="font-bold text-2xl text-gray-900 mb-2">
                 {item.title}
               </h4>
