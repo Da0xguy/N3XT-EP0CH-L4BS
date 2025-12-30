@@ -185,9 +185,9 @@ export default function LandingPage() {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { : {Item2}, title: "Decentralized Protocols", text: "Crafting robust and secure blockchain protocols that serve as the backbone for future decentralized applications." },
-              { img: {Item1}, title: "DeFi & NFT Platforms", text: "Developing innovative financial tools and unique digital asset marketplaces that redefine ownership and value." },
-              { img: {Item3}, title: "Metaverse & Identity", text: "Building immersive virtual environments and secure digital identity solutions for the next evolution of human interaction." },
+              { img: Item2, title: "Decentralized Protocols", text: "Crafting robust and secure blockchain protocols that serve as the backbone for future decentralized applications." },
+              { img: Item1, title: "DeFi & NFT Platforms", text: "Developing innovative financial tools and unique digital asset marketplaces that redefine ownership and value." },
+              { img: Item3, title: "Metaverse & Identity", text: "Building immersive virtual environments and secure digital identity solutions for the next evolution of human interaction." },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -230,9 +230,9 @@ export default function LandingPage() {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { img: {Suiswap}, title: "SuiWall Swap" },
-              { img: {Medlock}, title: "Med Lock" },
-              { img: {Medlock}, title: "Backstage" },
+              { img: Suiswap, title: "SuiWall Swap" },
+              { img: Medlock, title: "Med Lock" },
+              { img: Backstage, title: "Backstage" },
             ].map((item, i) => (
               <motion.div
                 key={i}
