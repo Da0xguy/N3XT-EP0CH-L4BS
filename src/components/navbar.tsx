@@ -3,12 +3,11 @@ import { useState } from "react";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const navItems: string[] = [
-    "About",
-    "Works",
-    "Projects",
-    "Why Us",
-    "Contact",
+  const navItems = [
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Why Us", link: "#why-us" },
+    { name: "Contact", link: "#contact" },
   ];
 
   return (
@@ -22,20 +21,18 @@ const Navbar: React.FC = () => {
               alt="Next Epoch Labs Logo"
               className="w-[50px] h-[30px]"
             />
-            <p className="font-bold text-[1.15rem] mt-[6px]">
-              NEXT EP0CH L4BS
-            </p>
+            <p className="font-bold text-[1.15rem] mt-[6px]">NEXT EP0CH L4BS</p>
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex">
+          <nav className="hidden md:flex space-x-4">
             {navItems.map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.link}
                 className="px-4 py-2 text-gray-700 font-medium transition-all duration-200 hover:text-[#FFD700]"
               >
-                {item}
+                {item.name}
               </a>
             ))}
           </nav>
@@ -75,12 +72,12 @@ const Navbar: React.FC = () => {
           <div className="md:hidden mx-4 mb-4 rounded-2xl bg-white/90 shadow border border-gray-200">
             {navItems.map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.name}
+                href={item.link}
                 className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-[#FFD700]"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {item.name}
               </a>
             ))}
           </div>
