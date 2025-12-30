@@ -311,19 +311,18 @@ export default function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section id="contact" className="px-[10%] py-25 bg-[#EFF6FF] text-center">
+      <section id="contact" className="px-[10%] py-24 bg-[#EFF6FF] text-center">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">
           Ready to Build the Future with Us?
         </h2>
 
-        <button className="bg-[#9EC8FF] hover:bg-blue-700 transition text-white px-6 py-2.5 rounded-md font-medium">
-          <a
-            href="mailto:nextepochlabs@gmail.com"
-            className="bg-[#9EC8FF] hover:bg-blue-700 transition text-white px-6 py-2.5 rounded-md font-medium inline-block"
-          >
-            Get in Touch
-          </a>
+        <button
+          onClick={() => window.location.href="mailto:nextepochlabs@gmail.com"}
+          className="bg-[#9EC8FF] hover:bg-blue-700 transition text-white px-6 py-2.5 rounded-md font-medium"
+        >
+          Get in Touch
         </button>
+
       </section>
 
       <footer className="bg-[#1F2937] px-[10%] py-8 text-center text-sm text-gray-400">
