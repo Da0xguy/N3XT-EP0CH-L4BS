@@ -18,8 +18,8 @@ import Item4 from "../assets/item4.png";
 import Item5 from "../assets/item5.png";
 import Item6 from "../assets/item6.png";
 import Item7 from "../assets/item7.png";
+import { FaXTwitter } from "react-icons/fa6";
 import {
-  Twitter,
   Github,
   Mail,
 } from "lucide-react";
@@ -337,7 +337,7 @@ export default function LandingPage() {
             aria-label="Twitter"
             className="text-gray-300 hover:text-white transition"
           >
-            <Twitter size={18} />
+            <FaXTwitter />
           </a>
 
           <a
