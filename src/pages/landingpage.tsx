@@ -98,13 +98,13 @@ const AnimatedLines = () => {
 
 
 const people = [
-  { name: 'BLockchainBard', role: 'Founder / CEO / Smart contract Devloper', img: Blockchain },
-  { name: 'Tomcrown', role: 'Co-Founder / Team Lead / Smart Contract Developer', img: Tomcrown },
-  { name: 'Uchihacrypt', role: 'Co-Founder / Community manager', img: Uchiha },
-  { name: 'Ay', role: 'Co-Founder / Front-end Developer', img: Ay },
-  { name: 'Ashlee', role: 'Co-Founder / Smart contract Developer', img: Ashlee },
-  { name: 'Eazi.crypt', role: 'Co-Founder / Designer', img: Jiya },
-  { name: 'Nanya', role: 'Co-Founder / Backend Developer', img: Nanya },
+  { name: 'BLockchainBard', role: 'CEO / Smart contract Devloper', img: Blockchain },
+  { name: 'Tomcrown', role: 'Team Lead / Smart Contract Developer', img: Tomcrown },
+  { name: 'Uchihacrypt', role: 'Community manager', img: Uchiha },
+  { name: 'Ay', role: 'Front-end Developer', img: Ay },
+  { name: 'Ashlee', role: 'Smart contract Developer', img: Ashlee },
+  { name: 'Eazi.crypt', role: 'Designer', img: Jiya },
+  { name: 'Nanya', role: 'Backend Developer', img: Nanya },
 ];
 
 export default function LandingPage() {
